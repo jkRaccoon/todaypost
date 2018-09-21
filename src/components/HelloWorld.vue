@@ -1,13 +1,47 @@
 <template>
-	<div class="hello">
-		<img alt="Vue logo" src="../assets/logo.png">
-		<h1>{{ msg }}</h1>
+	<!-- Wrapper -->
+	<div id="wrapper" >
+		<includeHeader></includeHeader>
+		<includeMenu></includeMenu>
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+				<header>
+					<h1>투데이포스트</h1>
+					<p></p>
+				</header>
+				<section class="tiles">
+					<article class="style1">
+						<span class="image">
+							<img src="../assets/18-09-22 05-12-13 2990.jpg" alt="" />
+						</span>
+						<router-link :to="{ path: '/view/1' }" for="a">
+							<h2>호신술 팁</h2>
+							<div class="content">
+								<p>호신술. 이렇게 한번해보자.</p>
+							</div>
+						</router-link>
+					</article>
+				</section>
+			</div>
+		</div>
+		<!-- Footer -->
+		<includeFooter></includeFooter>
 	</div>
 </template>
 
 <script>
+import includeFooter from './include/footer';
+import includeHeader from './include/header';
+import includeMenu from './include/menu';
+
 export default {
 	name: 'HelloWorld',
+	components: {
+		includeFooter: includeFooter,
+		includeHeader: includeHeader,
+		includeMenu: includeMenu
+	},
 	data () {
 		return {
 			msg: 'HelloWorld'
@@ -18,18 +52,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+
 </style>
