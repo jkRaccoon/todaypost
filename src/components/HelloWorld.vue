@@ -1,6 +1,6 @@
 <template>
 	<!-- Wrapper -->
-	<div id="wrapper" >
+	<article id="wrapper" >
 		<includeHeader></includeHeader>
 		<includeMenu></includeMenu>
 		<!-- Main -->
@@ -27,7 +27,7 @@
 		</div>
 		<!-- Footer -->
 		<includeFooter></includeFooter>
-	</div>
+	</article>
 </template>
 
 <script>
