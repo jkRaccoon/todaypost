@@ -60,6 +60,11 @@ export default {
 		includeHeader: includeHeader,
 		includeMenu: includeMenu
 	},
+	mounted () {
+		this.$nextTick(() => {
+			if(typeof FB !== 'undefined') FB.XFBML.parse(this.$el);
+		});
+	},
 	data () {
 		return {
 			msg: 'HelloWorld'
