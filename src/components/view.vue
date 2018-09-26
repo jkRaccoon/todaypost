@@ -14,13 +14,13 @@
 
 			<!-- The authors of your article -->
 			<address>
-			  Todaypost
+				Todaypost
 			</address>
 
 			<!-- The cover image shown inside your article -->
 			<figure>
-			  <img src="../assets/18-09-22 05-12-13 2990.jpg" alt="" />
-			  <figcaption></figcaption>
+				<img src="../assets/18-09-22 05-12-13 2990.jpg" alt="" />
+				<figcaption></figcaption>
 			</figure>
 
 			<!-- A kicker for your article -->
