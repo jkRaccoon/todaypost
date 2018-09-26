@@ -8,7 +8,7 @@
 			<!-- Nav -->
 			<nav>
 				<ul>
-					<li><a href="#menu">Menu</a></li>
+					<li><a>Menu</a></li>
 				</ul>
 			</nav>
 		</div>
